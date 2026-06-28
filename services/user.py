@@ -25,7 +25,9 @@ def create_user(
     return User.objects.create_user(**create_kwargs)
 
 
-def get_user(user_id: int) -> User:
+def get_user(
+        user_id: int
+) -> User:
     return User.objects.get(id=user_id)
 
 
